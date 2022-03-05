@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kproduce.roundcorners.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:rTopRadius="@dimen/dp_10"
+    android:layout_gravity="bottom"
+    android:background="#f5f6f7"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="#333333"
+        android:padding="@dimen/dp_10"
+        android:text="购物车"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <ListView
+        android:id="@+id/gwc_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</com.kproduce.roundcorners.RoundLinearLayout>

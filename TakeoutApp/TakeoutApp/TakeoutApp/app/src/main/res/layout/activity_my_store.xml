@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <com.kproduce.roundcorners.RoundImageView
+                   android:id="@+id/store_image"
+                   android:scaleType="fitXY"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/dp_150"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="@dimen/dp_20"
+                   android:layout_marginBottom="@dimen/dp_10"
+                   android:src="@mipmap/addstore">
+               </com.kproduce.roundcorners.RoundImageView>
+
+               <TextView
+                   android:background="#18000000"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+               </TextView>
+
+           </FrameLayout>
+
+            <com.kproduce.roundcorners.RoundTextView
+                android:id="@+id/store_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                android:text="店铺名称\n你好"></com.kproduce.roundcorners.RoundTextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <com.kproduce.roundcorners.RoundLinearLayout
+                    android:id="@+id/settingtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="#50f1f1f1"
+                    android:orientation="horizontal"
+                    app:rRadius="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:padding="@dimen/dp_10"
+                        android:text="菜单管理"
+                        android:textColor="#333333"></TextView>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:src="@mipmap/right_arrow"></ImageView>
+
+                </com.kproduce.roundcorners.RoundLinearLayout>
+
+                <com.kproduce.roundcorners.RoundLinearLayout
+                    android:id="@+id/sales_statistics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="#50f1f1f1"
+                    android:orientation="horizontal"
+                    app:rRadius="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:padding="@dimen/dp_10"
+                        android:text="销售数据"
+                        android:textColor="#333333"></TextView>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:src="@mipmap/right_arrow"></ImageView>
+
+                </com.kproduce.roundcorners.RoundLinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f6f7"
+            android:visibility="gone">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@mipmap/storeback"></ImageView>
+
+            <com.kproduce.roundcorners.RoundButton
+                android:id="@+id/create_store"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_150"
+                android:background="#4678ff"
+                android:gravity="center"
+                android:text="创建店铺"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_15"
+                app:rRadius="@dimen/dp_10"></com.kproduce.roundcorners.RoundButton>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

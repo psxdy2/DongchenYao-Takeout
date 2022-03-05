@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drag_edge="right">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delect"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="match_parent"
+                android:background="#FF0000"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="#336598"
+                android:textSize="@dimen/dp_15"
+                android:padding="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_head">
+    </include>
+
+    <TextView
+        android:text="欢迎回来尊敬的管理员"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100">
+    </TextView>
+
+    <TextView
+        android:id="@+id/current_time"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:text="0000:00:00 00:00:00"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <com.kproduce.roundcorners.RoundLinearLayout
+        android:id="@+id/go_usermanager"
+        app:rRadius="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_10"
+        android:background="#f5f6f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:gravity="center|left"
+            android:textColor="#333333"
+            android:text="用户管理"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/right_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20">
+        </ImageView>
+
+    </com.kproduce.roundcorners.RoundLinearLayout>
+
+    <com.kproduce.roundcorners.RoundLinearLayout
+        android:id="@+id/go_storemanager"
+        app:rRadius="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_10"
+        android:background="#f5f6f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:gravity="center|left"
+            android:textColor="#333333"
+            android:text="店铺管理"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/right_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20">
+        </ImageView>
+
+    </com.kproduce.roundcorners.RoundLinearLayout>
+
+    <com.kproduce.roundcorners.RoundLinearLayout
+        android:id="@+id/go_deliverymanager"
+        app:rRadius="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_10"
+        android:background="#f5f6f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:gravity="center|left"
+            android:textColor="#333333"
+            android:text="骑手管理"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/right_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20">
+        </ImageView>
+
+    </com.kproduce.roundcorners.RoundLinearLayout>
+
+    <com.kproduce.roundcorners.RoundLinearLayout
+        android:id="@+id/go_dataglance"
+        app:rRadius="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_10"
+        android:background="#f5f6f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:gravity="center|left"
+            android:textColor="#333333"
+            android:text="平台数据一览"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/right_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20">
+        </ImageView>
+
+    </com.kproduce.roundcorners.RoundLinearLayout>
+
+</LinearLayout>

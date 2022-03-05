@@ -1,0 +1,25 @@
+1。activity 是安卓四大组件
+* 简单理解就是一个activity对应了一个界面
+* 这个界面它属于一个大容器
+* 它里面是可以放置n个frgament
+* 安卓程序app启动的时候都需要一个activity的主活动作为入口
+*  <activity android:name=".ui.MainActivity">
+              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+          </activity>
+* 简单的说 一个活动对应后端代码+一个前端代码就是xml文件
+
+
+2。fragment
+* 简单理解就是一个activity对应了一个界面
+* 碎片化服务
+* fragment就好想多个碎片放置到了我们的activity中
+
+在安卓中更新界面的一切操作都必须在ui线程也就是说主线程，不能在子线程。
+
+ps: 这里所说的安卓前端都是对应都xml文件 这里所说后端都是对应.java文件 以上都是相对于安卓端来说 不能严格定义
+
+
